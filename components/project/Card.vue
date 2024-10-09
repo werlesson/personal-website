@@ -11,7 +11,7 @@ const props = defineProps<{
 
 <template>
   <div class="flex flex-col sm:flex-row">
-    <div class="mb-4 aspect-square w-full shrink-0 overflow-clip bg-zinc-100 sm:mb-0 sm:mr-5 sm:size-48">
+    <div class="mb-4 aspect-square rounded-xl w-full shrink-0 overflow-clip bg-zinc-100 sm:mb-0 sm:mr-5 sm:size-48">
       <img :src="props.project.image" alt="Project Image" class="w-full h-full object-cover" />
       <!-- Adiciona a imagem -->
     </div>

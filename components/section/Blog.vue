@@ -19,7 +19,7 @@ const posts = [
 </script>
 
 <template>
-  <section class="py-32 bg-gray-300">
+  <section class="py-32 bg-indigo-300">
     <div class="container flex flex-col items-center gap-16 lg:px-16">
       <div class="text-center">
         <p class="mb-6 text-xs font-medium uppercase tracking-wider">Tag Line</p>

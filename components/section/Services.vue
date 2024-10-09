@@ -1,30 +1,30 @@
 <script setup lang="ts">
+import { ref, resolveComponent } from 'vue';
+
 const services = ref([
   {
     title: 'Desenvolvimento de Aplicações Web com Nuxt.js e Next.js',
     description: 'Construção de aplicações web modernas e otimizadas com foco em performance e SEO.',
+    icon: 'Code'
   },
   {
     title: 'Interfaces Responsivas e Otimizadas',
     description: 'Desenvolvimento de interfaces que se adaptam a diferentes dispositivos e tamanhos de tela, proporcionando uma ótima experiência de usuário.',
+    icon: 'MonitorSmartphone'
   },
   {
     title: 'Consultoria e Revisão de Código',
     description: 'Revisão técnica de código para garantir qualidade, boas práticas e escalabilidade em projetos web.',
+    icon: 'MessageCircleCode'
   },
-  // {
-  //   title: 'Otimização de Performance e SEO',
-  //   description: 'Implementação de técnicas para melhorar o desempenho do site e aumentar sua visibilidade nos motores de busca.',
-  // },
   {
     title: 'Websites e Aplicações Customizadas',
     description: 'Criação de soluções web personalizadas, adaptadas às necessidades específicas de cada cliente ou negócio.',
+    icon: 'Globe'
   },
-  // {
-  //   title: 'Integração com APIs e Microsserviços',
-  //   description: 'Conexão de aplicações com serviços externos e arquiteturas baseadas em microsserviços para maior flexibilidade e escalabilidade.',
-  // },
 ]);
+
+
 </script>
 
 <template>
@@ -53,11 +53,10 @@ const services = ref([
       </div>
       <div
         class="flex justify-center items-center gap-x-5 gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8">
-        <ServiceCard v-for="service in services" :service="service" />
+        <ServiceCard v-for="service in services" :service="service" :key="service.title" />
       </div>
     </div>
   </section>
-
 </template>
 
 <style scoped></style>

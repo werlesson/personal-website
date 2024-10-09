@@ -1,4 +1,19 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const props = withDefaults(defineProps<{
+  title: string;
+  description: string;
+  textButton: string;
+  stats: {
+    value: string | number;
+    text: string;
+  }[]
+}>(), {
+  title: "Título",
+  description: "Descrição a ser acrescenta",
+  textButton: "Botão",
+  stats: []
+});
+</script>
 
 <template>
   <section class="py-24 relative">
@@ -18,31 +33,17 @@
           <div class="w-full flex-col justify-center items-start gap-8 flex">
             <div class="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
               <h2 class="text-gray-900 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
-                Sobre mim</h2>
+                {{ props.title }}
+              </h2>
               <p class="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
-                Sou um desenvolvedor web com anos de experiência no desenvolvimento de soluções digitais. Minha paixão é
-                criar interfaces intuitivas e interativas que melhoram a experiência do usuário. Ao longo da minha
-                carreira, tenho me especializado em frameworks como Nuxt e Next.js, o que me permite construir projetos
-                rápidos, eficientes e otimizados para SEO.</p>
+                {{ props.description }}
+              </p>
             </div>
-            <div class="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex">
-              <div class="flex-col justify-start items-start inline-flex">
-                <h3 class="text-gray-900 text-4xl font-bold font-manrope leading-normal">10+</h3>
-                <h6 class="text-gray-500 text-base font-normal leading-relaxed">Anos de experiência</h6>
-              </div>
-              <div class="flex-col justify-start items-start inline-flex">
-                <h4 class="text-gray-900 text-4xl font-bold font-manrope leading-normal">30+</h4>
-                <h6 class="text-gray-500 text-base font-normal leading-relaxed">Projetos de sucesso</h6>
-              </div>
-              <div class="flex-col justify-start items-start inline-flex">
-                <h4 class="text-gray-900 text-4xl font-bold font-manrope leading-normal">52+</h4>
-                <h6 class="text-gray-500 text-base font-normal leading-relaxed">Happy Clients</h6>
-              </div>
-            </div>
+            <GridStats :stats="props.stats" />
           </div>
           <button
             class="sm:w-fit w-full px-3.5 py-2 bg-indigo-600 hover:bg-indigo-800 transition-all duration-700 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
-            <span class="px-1.5 text-white text-sm font-medium leading-6">Ler mais</span>
+            <span class="px-1.5 text-white text-sm font-medium leading-6">{{ textButton }}</span>
           </button>
         </div>
       </div>

@@ -52,13 +52,13 @@ const projects = ref([
 </script>
 
 <template>
-  <section class="py-32 bg-gray-300">
+  <section class="py-32 bg-indigo-300">
     <div class="container flex flex-col items-center text-center">
-      <p class="semibold">We&#x27;re hiring</p>
-      <h2 class="my-6 text-pretty text-2xl font-bold lg:text-4xl">Projects</h2>
-      <p class="mb-8 max-w-3xl text-zinc-600 lg:text-xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat
-        omnis! Porro facilis quo animi consequatur. Explicabo.
+      <p class="semibold">Meus Projetos</p>
+      <h2 class="my-6 text-pretty text-2xl font-bold lg:text-4xl">Projetos Pessoais</h2>
+      <p class="mb-8 max-w-3xl text-zinc-700 lg:text-xl">
+        Explore os projetos pessoais que desenvolvi ao longo da minha carreira. Cada projeto reflete minha paixão por
+        tecnologia e meu compromisso com a excelência. Confira abaixo para saber mais sobre cada um deles.
       </p>
       <!-- <div class="flex w-full flex-col justify-center gap-2 sm:flex-row">
         <button

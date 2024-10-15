@@ -20,13 +20,13 @@ const props = withDefaults(defineProps<HomeSectionProps>(), {
             <p class="mb-8 max-w-xl text-zinc-600 lg:text-lg">{{ props.description }}</p>
             <div class="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-zinc-900 text-white hover:bg-zinc-900/90 h-10 px-4 py-2 w-full sm:w-auto">
+                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-indigo-600 text-white hover:bg-indigo-600/90 h-10 px-4 py-2 w-full sm:w-auto">
                 {{ props.textButtonPrimary }}
               </button>
-              <button
+              <!-- <button
                 class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-indigo-200 hover:bg-indigo-100 hover:text-zinc-800 h-10 px-4 py-2 w-full sm:w-auto">
                 {{ props.textButtonSecondary }}
-              </button>
+              </button> -->
             </div>
           </div>
         </div>

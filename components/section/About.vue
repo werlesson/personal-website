@@ -1,17 +1,12 @@
 <script setup lang="ts">
-const props = withDefaults(defineProps<{
-  title: string;
-  description: string;
-  textButton: string;
-  stats: {
-    value: string | number;
-    text: string;
-  }[]
-}>(), {
+import type { AboutSectionProps } from '@/types/AboutSectionProps';
+import type { StatsProps } from '@/types/StatsProps';
+
+const props = withDefaults(defineProps<AboutSectionProps>(), {
   title: "Título",
   description: "Descrição a ser acrescenta",
   textButton: "Botão",
-  stats: []
+  stats: (): StatsProps[] => []
 });
 </script>
 

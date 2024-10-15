@@ -1,10 +1,7 @@
 <script setup lang="ts">
-const props = defineProps<{
-  stats: {
-    value: string | number;
-    text: string;
-  }[];
-}>();
+import type { GridStatsProps } from '@/types/GridStatsProps';
+
+const props = defineProps<GridStatsProps>();
 </script>
 
 <template>

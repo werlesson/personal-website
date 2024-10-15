@@ -1,4 +1,4 @@
-import type StatsProps from './StatsProps';
-export default interface GridStatsProps {
+import type { StatsProps } from './StatsProps';
+export interface GridStatsProps {
     stats: StatsProps[];
 }

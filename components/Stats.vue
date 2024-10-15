@@ -1,8 +1,7 @@
 <script setup lang="ts">
-const props = defineProps<{
-  value: string | number;
-  text: string;
-}>();
+import type { StatsProps } from '@/types/StatsProps';
+
+const props = defineProps<StatsProps>();
 </script>
 
 <template>

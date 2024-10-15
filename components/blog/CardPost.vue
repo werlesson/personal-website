@@ -1,11 +1,8 @@
 <script setup lang="ts">
+import type { Post } from '@/types/Post';
 
 const props = defineProps<{
-  post: {
-    title: string
-    description: string
-    image: string
-  }
+  post: Post
 }>()
 
 </script>

@@ -1,12 +1,7 @@
 <script setup lang="ts">
-interface Props {
-  title: string;
-  description: string;
-  textButtonPrimary: string;
-  textButtonSecondary: string;
-}
+import type { HomeSectionProps } from '@/types/HomeSectionProps';
 
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<HomeSectionProps>(), {
   title: "Título",
   description: "Descrição a ser acrescenta",
   textButtonPrimary: "Botão primário",

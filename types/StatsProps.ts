@@ -1,4 +1,4 @@
-export default interface StatsProps {
+export interface StatsProps {
     value: string | number;
     text: string;
 }

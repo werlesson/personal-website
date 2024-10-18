@@ -1,11 +1,11 @@
 <script setup lang="ts">
 const menu = ref([
   { name: 'Início', href: '#' },
-  { name: 'Sobre', href: '#' },
-  { name: 'Projetos', href: '#' },
-  { name: 'Serviços', href: '#' },
-  { name: 'Blog', href: '#' },
-  { name: 'Contato', href: '#' },
+  { name: 'Sobre', href: '#sobre' },
+  { name: 'Projetos', href: '#projetos' },
+  { name: 'Serviços', href: '#servicos' },
+  { name: 'Blog', href: '#blog' },
+  { name: 'Contato', href: '#contato' },
 ]);
 
 const isDrawerOpen = ref(false);
@@ -25,6 +25,7 @@ const handleScroll = () => {
 
 onMounted(() => {
   window.addEventListener('scroll', handleScroll);
+  handleScroll();
 })
 
 onBeforeUnmount(() => {

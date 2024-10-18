@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+  <section id="contato" class="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
     <!-- <div class="absolute inset-x-0 bottom-[10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:bottom-[20rem]"
       aria-hidden="true">
       <div
@@ -42,18 +42,12 @@
             <div class="absolute inset-y-0 left-0 flex items-center">
               <label for="country" class="sr-only">País</label>
               <select id="country" name="country"
-                class="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm">
-                <option>BR</option>
+                class="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-2 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm">
+                <option>BR +55</option>
               </select>
-              <svg class="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400" viewBox="0 0 20 20"
-                fill="currentColor" aria-hidden="true" data-slot="icon">
-                <path fill-rule="evenodd"
-                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                  clip-rule="evenodd" />
-              </svg>
             </div>
             <input type="tel" name="phone-number" id="phone-number" autocomplete="tel"
-              class="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+              class="block w-full rounded-md border-0 px-3.5 py-2 pl-24 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
         <div class="sm:col-span-2">
@@ -87,7 +81,7 @@
           conversar</button>
       </div>
     </form>
-  </div>
+  </section>
 </template>
 
 <style scoped></style>

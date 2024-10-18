@@ -11,7 +11,7 @@ const props = withDefaults(defineProps<AboutSectionProps>(), {
 </script>
 
 <template>
-  <section class="py-24 relative">
+  <section id="sobre" class="py-24 relative">
     <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
       <div class="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
         <div class="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 lg:order-first order-last">

@@ -8,7 +8,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <a href="#" class="flex flex-col overflow-clip rounded-xl border border-border">
+  <a href="#" class="flex flex-col overflow-clip rounded-xl border border-black">
     <div>
       <img :src="props.post.image" alt="algo" exploring UI Design
         class="aspect-[16/9] h-full w-full object-cover object-center" />

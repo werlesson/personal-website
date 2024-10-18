@@ -28,7 +28,7 @@ const props = withDefaults(defineProps<BlogSectionProps>(), {
 </script>
 
 <template>
-  <section id="blog" class="py-32 bg-indigo-300">
+  <section id="blog" class="py-32 bg-indigo-300 shadow-sm">
     <div class="container flex flex-col items-center gap-16 lg:px-16">
       <div class="text-center">
         <p class="mb-6 text-xs font-medium uppercase tracking-wider">{{ props.subtitle }}</p>

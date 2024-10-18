@@ -11,7 +11,7 @@ const props = withDefaults(defineProps<ProjectsSectionProps>(), {
 </script>
 
 <template>
-  <section id="projetos" class="py-32 bg-indigo-300">
+  <section id="projetos" class="py-32 bg-indigo-300 shadow-sm">
     <div class="container flex flex-col items-center text-center">
       <p class="semibold">{{ props.subtitle }}</p>
       <h2 class="my-6 text-pretty text-2xl font-bold lg:text-4xl">{{ props.title }}</h2>
